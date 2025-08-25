@@ -90,6 +90,15 @@ namespace Adv_4
         }
         #endregion
 
+        #region Q10  Swap Keys and Values in Hashtable
+        static Hashtable SwapKeysAndValues(Hashtable table)
+        {
+            var swapped = new Hashtable();
+            foreach (DictionaryEntry entry in table)
+                swapped[entry.Value] = entry.Key;
+            return swapped;
+        }
+        #endregion
 
     }
 }
