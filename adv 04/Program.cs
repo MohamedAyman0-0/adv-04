@@ -120,6 +120,14 @@ namespace Adv_4
             return set.Where(n => n > target).ToList();
         }
         #endregion
+        #region Q14 Keys with Even Values in SortedList
+        static List<int> KeysWithEvenValues(SortedList<int, int> list)
+        {
+            return list.Where(kv => kv.Value % 2 == 0)
+                       .Select(kv => kv.Key)
+                       .ToList();
+        }
+        #endregion
     }
 }
 
