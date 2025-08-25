@@ -153,6 +153,16 @@ namespace Adv_4
             };
             FindKeysForValue(tableQ3, "apple");
             #endregion
+            #region Q4 Group Anagrams
+            string[] strsQ4 = { "eat", "tea", "tan", "ate", "nat", "bat" };
+            var grouped = GroupAnagrams(strsQ4);
+            foreach (var group in grouped)
+                Console.WriteLine($"[{string.Join(", ", group)}]");
+            #endregion
+
+
+
+
         }
     }
 }    
