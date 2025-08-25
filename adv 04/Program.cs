@@ -18,7 +18,24 @@ namespace Adv_4
         }
         #endregion
 
-     
+        #region Q2 Find Key with Highest Value
+        static string GetKeyWithHighestValue(Hashtable table)
+        {
+            string maxKey = null;
+            int maxValue = int.MinValue;
+
+            foreach (DictionaryEntry entry in table)
+            {
+                int value = (int)entry.Value;
+                if (value > maxValue)
+                {
+                    maxValue = value;
+                    maxKey = (string)entry.Key;
+                }
+            }
+            return maxKey;
         }
+        #endregion
     }
+}
 
