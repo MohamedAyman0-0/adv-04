@@ -108,6 +108,13 @@ namespace Adv_4
         }
         #endregion
 
+        #region Q12 Count Keys Starting with TargetChar
+        static int CountKeysStartingWith(Dictionary<string, int> dict, char targetChar)
+        {
+            return dict.Keys.Count(k => k.StartsWith(targetChar.ToString()));
+        }
+        #endregion
+
     }
 }
 
