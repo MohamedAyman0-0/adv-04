@@ -184,7 +184,11 @@ namespace Adv_4
                 Console.WriteLine($"{emp.Key} : {emp.Value}");
             #endregion
 
-
+            #region Q8 Find Missing Numbers from 1 to N
+            int[] arrQ8 = { 2, 3, 7, 4, 9 };
+            var missing = FindMissingNumbers(arrQ8, 10);
+            Console.WriteLine("Missing: " + string.Join(", ", missing));
+            #endregion
         }
     }
 }    
