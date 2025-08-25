@@ -128,6 +128,15 @@ namespace Adv_4
                        .ToList();
         }
         #endregion
+
+        static void Main(string[] args)
+        {
+            #region Q1 Count Frequency of Each Element
+            int[] arrQ1 = { 1, 2, 2, 3, 1, 4 };
+            CountFrequencies(arrQ1);
+            #endregion
+
+        }
     }
-}
+    }
 
