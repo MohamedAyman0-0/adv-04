@@ -66,12 +66,24 @@ namespace Adv_4
             return dict.Values.ToList();
         }
         #endregion
+
         #region Q5 Check if Array Contains Duplicates
         static bool ContainsDuplicates(int[] arr)
         {
             return arr.Length != arr.Distinct().Count();
         }
         #endregion
+        #region Q8 Find Missing Numbers from 1 to N
+        static List<int> FindMissingNumbers(int[] arr, int N)
+        {
+            var set = new HashSet<int>(arr);
+            var missing = new List<int>();
+            for (int i = 1; i <= N; i++)
+                if (!set.Contains(i)) missing.Add(i);
+            return missing;
+        }
+        #endregion
+
     }
 }
 
