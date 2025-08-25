@@ -216,6 +216,16 @@ namespace Adv_4
                 return union;
             }
             #endregion
+
+            #region Q12 Count Keys Starting with TargetChar
+            var dictQ12 = new Dictionary<string, int>
+            {
+                {"apple",1},
+                {"animal",2},
+                {"airport",3}
+            };
+            Console.WriteLine("Keys starting with 'a': " + CountKeysStartingWith(dictQ12, 'a'));
+            #endregion
         }
     }
 }    
