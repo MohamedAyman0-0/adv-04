@@ -135,8 +135,16 @@ namespace Adv_4
             int[] arrQ1 = { 1, 2, 2, 3, 1, 4 };
             CountFrequencies(arrQ1);
             #endregion
+            #region Q2 Find Key with Highest Value
+            Hashtable tableQ2 = new Hashtable()
+            {
+                { "A", 5 },
+                { "B", 10 },
+                { "C", 7 }
+            };
+            #endregion
 
         }
     }
-    }
+}    
 
