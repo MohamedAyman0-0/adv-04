@@ -99,6 +99,14 @@ namespace Adv_4
             return swapped;
         }
         #endregion
+        #region Q11  Union of Two Sets
+        static HashSet<int> UnionSets(HashSet<int> set1, HashSet<int> set2)
+        {
+            var union = new HashSet<int>(set1);
+            union.UnionWith(set2);
+            return union;
+        }
+        #endregion
 
     }
 }
