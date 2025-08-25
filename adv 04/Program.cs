@@ -153,11 +153,17 @@ namespace Adv_4
             };
             FindKeysForValue(tableQ3, "apple");
             #endregion
+
             #region Q4 Group Anagrams
             string[] strsQ4 = { "eat", "tea", "tan", "ate", "nat", "bat" };
             var grouped = GroupAnagrams(strsQ4);
             foreach (var group in grouped)
                 Console.WriteLine($"[{string.Join(", ", group)}]");
+            #endregion
+
+            #region Q5 Check if Array Contains Duplicates
+            int[] arrQ5 = { 1, 2, 3, 1 };
+            Console.WriteLine("Contains duplicates: " + ContainsDuplicates(arrQ5));
             #endregion
 
 
