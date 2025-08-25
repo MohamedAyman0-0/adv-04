@@ -189,6 +189,12 @@ namespace Adv_4
             var missing = FindMissingNumbers(arrQ8, 10);
             Console.WriteLine("Missing: " + string.Join(", ", missing));
             #endregion
+
+            #region Q9 Unique Values with HashSet
+            var numsQ9 = new List<int> { 1, 2, 2, 3, 4, 4 };
+            var unique = GetUniqueValues(numsQ9);
+            Console.WriteLine("Unique: " + string.Join(", ", unique));
+            #endregion
         }
     }
 }    
