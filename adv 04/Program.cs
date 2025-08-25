@@ -144,6 +144,15 @@ namespace Adv_4
             };
             #endregion
 
+            #region Q3 Find Keys for Specific TargetValue
+            Hashtable tableQ3 = new Hashtable()
+            {
+                { "key1", "apple" },
+                { "key2", "banana" },
+                { "key3", "apple" }
+            };
+            FindKeysForValue(tableQ3, "apple");
+            #endregion
         }
     }
 }    
