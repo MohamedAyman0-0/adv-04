@@ -114,7 +114,12 @@ namespace Adv_4
             return dict.Keys.Count(k => k.StartsWith(targetChar.ToString()));
         }
         #endregion
-
+        #region Q13 Find Elements Greater Than Target in SortedSet
+        static List<int> ElementsGreaterThanTarget(SortedSet<int> set, int target)
+        {
+            return set.Where(n => n > target).ToList();
+        }
+        #endregion
     }
 }
 
