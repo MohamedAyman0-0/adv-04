@@ -233,6 +233,17 @@ namespace Adv_4
             Console.WriteLine("Greater than 4: " + string.Join(", ", greaterList));
             #endregion
 
+            #region Q14 Keys with Even Values in SortedList
+            var sortedListQ14 = new SortedList<int, int>
+            {
+                {1, 10},
+                {2, 15},
+                {3, 20}
+            };
+            var evenKeys = KeysWithEvenValues(sortedListQ14);
+            Console.WriteLine("Keys with even values: " + string.Join(", ", evenKeys));
+            #endregion
+
         }
     }
 }    
