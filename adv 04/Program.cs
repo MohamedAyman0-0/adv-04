@@ -36,6 +36,22 @@ namespace Adv_4
             return maxKey;
         }
         #endregion
+
+        #region Q3 Find Keys for Specific TargetValue
+        static void FindKeysForValue(Hashtable table, string targetValue)
+        {
+            bool found = false;
+            foreach (DictionaryEntry entry in table)
+            {
+                if ((string)entry.Value == targetValue)
+                {
+                    Console.WriteLine(entry.Key);
+                    found = true;
+                }
+            }
+            if (!found) Console.WriteLine("Key not found");
+        }
+        #endregion
     }
 }
 
