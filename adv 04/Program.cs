@@ -195,6 +195,18 @@ namespace Adv_4
             var unique = GetUniqueValues(numsQ9);
             Console.WriteLine("Unique: " + string.Join(", ", unique));
             #endregion
+
+            #region Q10 Swap Keys and Values in Hashtable
+            Hashtable tableQ10 = new Hashtable()
+            {
+                { "A", 1 },
+                { "B", 2 },
+                { "C", 3 }
+            };
+            var swapped = SwapKeysAndValues(tableQ10);
+            foreach (DictionaryEntry entry in swapped)
+                Console.WriteLine($"{entry.Key} : {entry.Value}");
+            #endregion
         }
     }
 }    
