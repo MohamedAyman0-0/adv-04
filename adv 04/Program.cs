@@ -83,6 +83,13 @@ namespace Adv_4
             return missing;
         }
         #endregion
+        #region Q9 Unique Values with HashSet
+        static HashSet<int> GetUniqueValues(List<int> nums)
+        {
+            return new HashSet<int>(nums);
+        }
+        #endregion
+
 
     }
 }
